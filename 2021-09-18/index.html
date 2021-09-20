@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Übung 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+    <nav>
+        <ul>
+            <li>
+                <a href="#section1">Link 1</a>
+            </li>
+            <li>
+                <a href="#section2">Link 2</a>
+            </li>
+            <li>
+                <a href="" target="_blank">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+    <article class="basic" id="section1">
+        <section>
+            <h2>Unsortierte Liste</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2
+                    <ol start="4">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Sortierte Liste</h2>
+            <ol reversed type="i">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Definitions Liste</h2>
+            <dl>
+                <dt>Definitionstitel 1</dt>
+                <dd>Definitionsdata 1</dd>
+                <dd>Definitionsdata 2</dd>
+                <dt>Titel </dt>
+                <dd>Data 1</dd>
+                <dd>Data 2</dd>
+            </dl>
+        </section>
+    </article>
+    <article class="basic" id="section2">
+        <section>
+            <h2>Zitate</h2>
+            <blockquote cite="https://google.com">
+                <p>mein eigentliches Zitat</p>
+            </blockquote>
+            <city>Autor ders gesagt hat</city>
+        </section>
+        <section>
+            <h2>preformatted text</h2>
+            <p>
+                <pre>
+                        Sehen Sie, 
+            Webstandards sind 
+                                    das Regelwerk, 
+                                    - 
+                        auf 
+                            dem 
+                Webseiten aufbauen.
+                    </pre>
+            </p>
+        </section>
+        <section>
+            <h2>Ausklappen</h2>
+            <details open>
+                <summary>Klapp mich 1</summary>
+                <p>Du siehst mich</p>
+            </details>
+            <details>
+                <summary>Klapp mich 2</summary>
+                <p>Du siehst mich nicht</p>
+            </details>
+        </section>
+    </article>
+    <article class="bg-img-1">
+        <section class="bg-transparent">
+            <p>Sehen Sie, <em>Webstandards</em> sind das Regelwerk, 
+                auf dem Webseiten aufbauen.</p>
+
+            <p>So gibt es Regeln für 
+                <span class="highlight">HTML, CSS, JavaScript </span>
+                oder auch XML; Worte, die Sie vielleicht 
+                <strong>schon einmal von</strong>
+                Ihrem Entwickler gehört haben.</p>
+
+            <p>Diese <small>Standards</small> sorgen dafür, dass alle 
+                <sub>Beteiligten</sub> aus einer 
+                <sup>Webseite</sup> den größten Nutzen ziehen.</p>
+
+            <p>Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den
+                Internet Explorer und einen anderen Browser programmieren.</p>
+
+            <p>Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz funktioniert,
+                aber ebenso gut für den Ausdruck oder</p>
+        </section>
+    </article>
+    <a href="#top">Back to top</a>
+</body>
+
+</html>

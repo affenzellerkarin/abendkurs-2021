@@ -1,0 +1,27 @@
+.s-bg {
+    background-color: darkseagreen;
+    padding: 10px;
+    margin: 10px;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex-item {
+
+    flex: 1 0 350px;
+}
+header {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('image-01.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.img-fluid {
+    width: 100%;
+}
