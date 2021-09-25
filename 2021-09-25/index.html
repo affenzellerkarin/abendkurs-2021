@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Übung 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Beschreibung der Seite">
+        <meta name="robots" content="noindex,nofollow">
+
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+
+        </nav>
+        <header>
+            <video loop muted controls poster="img/matthew-henry-U5rMrSI7Pn4-unsplash.jpg">
+                <source src="SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                <source src="SampleVideo_1280x720_1mb.ogg" type="video/ogg">
+            </video>
+        </header>
+        <main>
+           <article class="flex">
+                <section>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+                        <circle r="60" cx="60" cy="60" fill="blue" />
+                    </svg>
+                </section>
+                <section>
+                        <img src="img/smiley.svg" alt="Smiley Bild" class="fluid">
+                </section>
+                <section>
+                    <object type="image/svg+xml" data="img/smiley.svg">
+                        Not support svg
+                    </object>
+                </section>
+                <section>
+                    <figure>
+                        <img src="img/matthew-henry-U5rMrSI7Pn4-unsplash.jpg" alt="Bildtitel" class="fluid">
+                        <figcaption>Meine Beschreibung</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10613.200078223452!2d14.29828408259751!3d48.31631252906079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739826366802c1%3A0xb95ebcb20db38723!2sTabakfabrik%20Linz!5e0!3m2!1sde!2sat!4v1632562263281!5m2!1sde!2sat" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+            </article>
+            <article class="flex">
+                <section>
+                    <audio controls>
+                        <source src="file_example_MP3_700KB.mp3" type="audio/mp3">
+                    </audio>
+                </section>
+            </article>
+            <article class="flex">
+                <object type="application/pdf" height="250px" data="Reiseankündigung.pdf"></object>
+            </article>
+
+
+            <article class="w-1200">
+                <form>
+                    <div class="flex">
+                        <label for="myName">Mein Name</label>
+                        <input type="text" name="myName" id="myName" class="w100" placeholder="Hier dein Name">
+                    </div>
+                    <div class="flex">
+                        <label for="email">Mailadresse</label>
+                        <input type="email" name="email" id="email" class="w100">
+                    </div>
+                    <div class="flex">
+                        <label for="pw">Passwort</label>
+                        <input type="password" name="pw" id="pw" class="w100">
+                    </div>
+                    <div class="flex">
+                        <label for="file">File upload</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+                    <div class="">
+                        <div>
+                            <input type="checkbox" name="checkbox1" id="checkbox1"> 
+                            <label for="checkbox1">Checkbox 1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="checkbox2" id="checkbox2"> 
+                            <label for="checkbox2">Checkbox 2</label>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div>
+                            <input type="radio" name="radio" id="radio1"> 
+                            <label for="radio1">Radio 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="radio" id="radio2"> 
+                            <label for="radio2">Radio 2</label>
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </main>
+    </body>
+</html>
