@@ -1,0 +1,69 @@
+.dflex {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+iframe {
+    max-width: 350px;
+}
+form .dflex > * {
+    flex: 0 1 250px;
+}
+a[href^="tel"] {
+    color: red;
+}
+p::first-letter {
+    font-size: 3rem;
+}
+.pseudo::before {
+    content: "zusätzlicher Text ";
+}
+ul {
+    list-style-type: none;
+}
+li::before {
+    content: " ";
+    padding: 5px;
+    margin-right: 5px;
+    background-image: url("wink.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+::placeholder {
+    color: blueviolet;
+}
+table {
+    width: 100%;
+    /*border-collapse: collapse;*/
+    border-spacing: 10px;
+    background-image: linear-gradient(45deg, white 0%, cyan 100%);
+}
+/* :nth-child(3n+2) => starte beim 2. Element und nimm jedes
+3. Element 
+:nth-child(odd)
+:nth-child(even)
+*/
+tr:nth-child(3n+2) {
+    background-color: bisque;
+}
+td {
+    padding: 15px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+body {
+    margin-bottom: 25vw;
+    animation: alternate backgroundAnim 5s infinite;
+}
+
+@keyframes backgroundAnim {
+    from {
+        background-color: cadetblue;
+    }
+    to {
+        background-color: coral;
+    }
+}

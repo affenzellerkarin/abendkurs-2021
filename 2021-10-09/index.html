@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Übung 4</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Unsere Übung 4">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="format-detection" content="telepone=no">
+</head>
+
+<body>
+    <article class="dflex">
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10613.986690762671!2d14.29067010530779!3d48.312531040256445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739965151ec903%3A0xa538245f2814695c!2sGRAND%20GARAGE!5e0!3m2!1sde!2sat!4v1633764295386!5m2!1sde!2sat"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section>
+            <p>Coders.Bay</p>
+            <p>
+                <a href="mailto:office@irgendwas.at">Schreib mir eine Mail</a>
+                <br>
+                <a href="tel:+436601212312">Ruf mich an</a>
+            </p>
+        </section>
+    </article>
+    <article>
+        <form>
+            <fieldset>
+                <legend>Abschnitt 1</legend>
+                <section class="dflex">
+                    <label for="textareaID">Großes Textfeld</label>
+                    <textarea rows="5" cols="20" name="longTextfield" id="textareaID"></textarea>
+                </section>
+                <section class="dflex">
+                    <label for="selectID">Wähl was aus</label>
+                    <select name="selectType" id="selectID">
+                        <option value="">Eintrag 1</option>
+                        <option value="">Eintrag 2</option>
+                        <option value="">Eintrag 3</option>
+                    </select>
+                </section>
+                <section class="dflex">
+                    <label for="datalistID">Interessen</label>
+                    <input type="text" list="myList" name="interessen" id="datalistID">
+                    <datalist id="myList">
+                        <option value="Tennis"></option>
+                        <option value="Rasenmähen"></option>
+                    </datalist>
+                </section>
+                <section class="dflex">
+                    <label for="test">
+                        Trage ein<br>
+                        <small>2 buchstaben 4 zahlen Reihenfolge</small>
+                    </label>
+                    <input type="text" name="test" pattern="[a-z]{2}[0-9]{4}" placeholder="rr1234" required>
+                </section>
+                <section class="dflex">
+                    <button type="button">Button ohne Funktion</button>
+                    <button type="reset">Formular leeren</button>
+                    <button type="submit">Absenden</button>
+                </section>
+            </fieldset>
+        </form>
+    </article>
+
+    <article>
+        <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.</p>
+
+        <p class="pseudo">Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.</p>
+        <ul>
+            <li>Element</li>
+            <li>Element</li>
+            <li>Element</li>
+        </ul>
+        <p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien.</p>
+
+        <p>Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.</p>
+
+        <p>Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu
+            unorthographisches Leben.</p>
+
+        <p>Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite
+            Grammatik.</p>
+
+        <p>Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und
+            hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren.</p>
+
+        <p>Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg.</p>
+
+        <p>Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die
+            Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen
+            Straße, der Zeilengasse.</p>
+
+        <p>Wehmütig lief ihm eine rhetorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es
+            eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie</p>
+    </article>
+    <article>
+        <table>
+            <thead>
+                <tr>
+                    <th>Überschrift 1</th>
+                    <th>Überschrift 2</th>
+                    <th>Überschrift 3</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Überschrift 1</th>
+                    <th>Überschrift 2</th>
+                    <th>Überschrift 3</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Eintrag 1</td>
+                    <td colspan="2">Eintrag 2</td>
+                    <!-- <td>Eintrag 3</td> -->
+                </tr>
+                <tr>
+                    <td>Eintrag 1</td>
+                    <td rowspan="2">Eintrag 2</td>
+                    <td>Eintrag 3</td>
+                </tr>
+                <tr>
+                    <td>Eintrag 1</td>
+                    <!-- <td>Eintrag 2</td> -->
+                    <td>Eintrag 3</td>
+                </tr>
+                <tr>
+                    <td>Eintrag 1</td>
+                    <td>Eintrag 2</td> 
+                    <td>Eintrag 3</td>
+                </tr>
+                <tr>
+                    <td>Eintrag 1</td>
+                    <td>Eintrag 2</td> 
+                    <td>Eintrag 3</td>
+                </tr>
+                <tr>
+                    <td>Eintrag 1</td>
+                    <td>Eintrag 2</td> 
+                    <td>Eintrag 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</body>
+
+</html>
