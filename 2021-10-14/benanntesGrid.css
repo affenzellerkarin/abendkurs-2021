@@ -12,21 +12,55 @@
 .header {
     background-color: cadetblue;
    grid-area: header;
+   padding: 20px; /* alle 4 Seiten gleicher Wert */
+   border: 10px dotted rgb(150, 171, 68);
+   border-radius: 50%;
+   /* 
+        dotted, dashed, solid, double
+        groove, ridge, inset, outset
+    */
 }
 .content {
     background-color: brown;
-   grid-area: content;
+    grid-area: content;
+    border: 10px dashed rgb(68, 171, 121);
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    box-shadow: 10px 20px 30px darkslategray;
+    margin: 20px;
+    padding: 10px 20px; /* 10px 20px 10px 20px */
+    /* Oben & unten: 10px
+       Recht & Links: 20px;
+    */
 }
 .navi {
- background-color: darkgoldenrod;
- grid-area: navi;
+    background-color: darkgoldenrod;
+    grid-area: navi;
+    border-left: 10px groove rgb(68, 166, 171);
+    padding: 5px 10px 20px;
+    /*
+        Top 5px
+        Right 10px
+        bottom 20px
+        left 10px
+    */
 }
 .sidenav {
     background-color: rebeccapurple;
     grid-area: sidenav;
+    border: 10px ridge rgb(118, 175, 191);
+    padding: 5px 10px 20px 25px;
+    /*
+        Top 5px
+        Right 10px
+        Bottom 20px
+        Left 25px
+    */
 }
 .footer {
     background-color: deepskyblue;
+    box-shadow: 1px 1px 20px inset darkslategray;
     grid-area: footer;
 }
 

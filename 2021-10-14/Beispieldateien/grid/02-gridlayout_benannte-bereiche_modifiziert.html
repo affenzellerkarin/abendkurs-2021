@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid benannte Bereiche</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body > * {
+			margin: 4px;
+			padding: 5px;
+			border-radius: 7px;
+		}
+
+		body {
+			font: 120% sans-serif;
+			max-width: 80rem;
+			margin: auto;
+			margin-top: 2rem;
+			background: #8fcb8f;
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			grid-template-rows: auto auto auto auto;
+			/*
+			Hilfe des Befehls grid-template-areas bei der Definition des Rasters im Elternelement benannt werden.
+			Dazu werden die einzelnen Zellen innerhalb einer Zeile mit Namen versehen. Die einzelnen Namen werden mit Leerzeichen von einander getrennt. Einzelne Zeilen stehen in Anführungsstrichen. Durch eine sinnvollste Strukturierung im Code, kann so der Layoutaufbau im Stylesheets »sichtbar« gemacht werden.
+			*/
+			grid-template-areas:
+				"kopf kopf"
+				"navi inhalt"
+				"seite inhalt"
+				"fuss fuss";
+		}
+
+		.kopf {
+			background: #038C3E;
+			color: #FFFFCB;
+			/*
+			Um Kind-Elemente einem benannten Bereich im Raster zuzuweisen, wird der Befehl grid-area verwendet.
+			*/
+			grid-area: kopf;
+		}
+
+		.navi {
+			background: #75BF95;
+			grid-area: navi;
+		}
+
+		.inhalt {
+			background: #F2F2F2;
+			grid-area: inhalt;
+		}
+
+		.seite {
+			background: #46A66F;
+			grid-area: seite;
+		}
+
+		.fuss {
+			background: #038C3E;
+			color: #FFFFCB;
+			grid-area: fuss;
+		}
+
+
+	</style>
+</head>
+<body>
+	<header class="kopf"><h2>kopf</h2></header>
+	<article class="inhalt"><h2>inhalt</h2>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+			magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+			gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+			elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+			eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+			dolor sit amet.</article>
+	<nav class="navi"><h2>navi</h2></nav>
+	<aside class="seite"><h2>seite</h2></aside>
+	<footer class="fuss"><h2>fuss</h2></footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+strong {
+    background-color: coral;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block; /* Margin Top und Bottom werden dargestellt */
+}
+img {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.flex {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    transition: transform 0.5s ease;
+}
+.btn-1:hover {
+    transform: rotate(90deg);
+}
+.btn-2:hover {
+    transform: scale(2);
+}
+.btn-3:hover {
+    transform: translate(10px, 20px);
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilder</title>
+  <style>
+    .imgfluid {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- <img sizes="(min-width: 900px) 33vw, 100vw"
+ srcset="http://placehold.it/400x150.jpg 600w,
+ http://placehold.it/600x300.jpg 900w"
+ src="http://placehold.it/400x150.jpg" alt="Alternativtext"> -->
+ <br>
+  <picture>
+    <source srcset="katze_2x.jpg" media="(min-width: 1200px)">
+      <source srcset="katze_auf_treppe.jpg" media="(min-width: 700px)">
+      
+    <img class="imgfluid" src="katze_ausschnitt.jpg" alt="Katze">
+  </picture>
+
+
+
+
+</body>
+</html>

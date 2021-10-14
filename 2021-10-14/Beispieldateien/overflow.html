@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>overflow</title>
+  <style>
+    body {
+      font: 100% sans-serif;
+    }
+
+    div {
+      width: 300px;
+      height: 150px;
+      margin: 20px;
+      display: inline-block;
+    }
+
+    .rollbalken {
+      overflow: scroll;
+    }
+
+    .versteckt {
+      overflow: hidden;
+    }
+
+    .scrollx {
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+    .scrolly {
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rollbalken">
+    <h2>overflow: scroll</h2>
+    <img src="landschaft.jpg" alt="englische Küste">
+  </div>
+  <div class="versteckt">
+    <h2>overflow: hidden</h2>
+    <img src="landschaft.jpg" alt="englische Küste">
+  </div>
+  <div class="scrollx">
+    <h2>overflow-x: scroll; overflow-y: hidden;</h2>
+    <img src="landschaft.jpg" alt="englische Küste">
+  </div>
+  <div class="scrolly">
+    <h2>overflow-y: scroll; overflow-x: hidden;</h2>
+    <img src="landschaft.jpg" alt="englische Küste">
+  </div>
+</body>
+
+</html>
