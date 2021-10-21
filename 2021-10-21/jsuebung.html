@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Übung</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <script>
+            'use strict';
+            /* While Schleife */
+                let eingabe = Number(prompt('Bis zu welchem Wert möchtest du zählen'));
+                let i = 1;
+                while(i <= eingabe) {
+                    document.write(i + '<br>');
+                    i++;
+                }
+
+            /* Do While Schleife */
+                do {
+                    eingabe = prompt('Ergebnis aus 3 + 2');
+                } while(eingabe != 5);
+                alert('richtig');
+
+            /* For Schleife */
+                for(let x = 1; x <= eingabe; x++) {
+                    document.write(x + "<br>");
+                }
+
+            /* Sonderform for */
+                let arr = [2, 5, 7, 3, 20];
+                for(let wert of arr) {
+                    document.write(wert + "<br>");
+                }
+
+            /* Map mit for-Schleife */
+                let meineMap = new Map();
+                meineMap.set('produkttyp', 'Brot');
+                meineMap.set('preis', 2.99);
+                meineMap.set('verfügbarkeit', true);
+                console.log(meineMap, arr);
+                document.write(meineMap.get('produkttyp') + '<br>');
+
+                for(let entry of meineMap) {
+                    document.write('Schlüsselbegriff: ' + entry[0] + "<br>");
+                    document.write('Inhalt: ' + entry[1] + '<br>');
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Zahlen raten</title>
+    </head>
+    <body>
+        <main>
+            <article class="box box-1" id="maxWert">
+                <div>
+                    <p>
+                        In diesem Spiel sollst du eine Zahl erraten
+                        zwischen 0 und x.<br>
+                        Gib an welche Zahl x sein soll.
+                    </p>
+                    <input type="number" class="formInput" id="maxZufallID">
+                    <button type="button" class="btn" onclick="zufallszahlFunction()">Wert setzen</button>
+                </div>
+            </article>
+
+            <article class="box box-2 dnone" id="versuche">
+                <div>
+                    <p>Anzahl der Versuche</p>
+                    <input type="number" class="formInput" id="anzahlVersuche">
+                    <button type="button" class="btn" onclick="versuchFunction()">Wert setzen</button>
+                </div>
+            </article>
+            
+            <article class="box box-3 dnone" id="raten">
+                <div>
+                    <p>Rate die Zahl</p>
+                    <input type="number" class="formInput" id="gerateneZahl">
+                    <button type="button" id="btnRaten" class="btn" onclick="game()">Raten</button>
+                </div>
+            </article>
+            <article class="" id="ausgabe"></article>
+        </main>
+
+        <script>
+            let counter = 0;
+            let zufallsZahl;
+            let gerateneZahl;
+            let anzahlVersuche;
+
+            function zufallszahlFunction() {
+                zufallsZahl = Number(document.getElementById('maxZufallID').value);
+                zufallsZahl = Math.random() * zufallsZahl;
+                zufallsZahl = Math.round(zufallsZahl);
+                document.getElementById('maxWert').classList.add('dnone');
+                document.getElementById('versuche').classList.remove('dnone');
+            }
+
+            function versuchFunction() {
+                anzahlVersuche = Number(document.getElementById('anzahlVersuche').value);
+                document.getElementById('versuche').classList.add('dnone');
+                document.getElementById('raten').classList.remove('dnone');
+            }
+
+            function game() {
+                gerateneZahl = Number(document.getElementById('gerateneZahl').value);
+                if(zufallsZahl < gerateneZahl) {
+                    document.getElementById('ausgabe').innerHTML += '<span class="wrong">zu groß</span>';
+                    gameOver();
+                } else if(zufallsZahl > gerateneZahl) {
+                    document.getElementById('ausgabe').innerHTML += '<span class="wrong">zu klein</span>';
+                    gameOver();
+                } else {
+                    document.getElementById('ausgabe').innerHTML += '<span ' +
+                    'class="right">Richtig</span>';
+                    document.getElementById('btnRaten').disabled = true;
+                }
+            }
+
+            function gameOver() {
+                counter++;
+                if(counter == anzahlVersuche) {
+                    document.getElementById('ausgabe').innerHTML += '<span class="wrong">Verloren</span>';
+                    document.getElementById('btnRaten').disabled = true;
+                }
+            }
+
+        </script>
+    </body>
+</html>

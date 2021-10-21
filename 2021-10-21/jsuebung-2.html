@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Funktionen</title>
+    </head>
+    <body>
+        <script>
+            /* Funktionen */
+                /* function greeting() {
+                    let name = prompt("Gib deinen Namen ein");
+                    alert("Herzlich Willkommen " + name);
+                }
+                greeting(); */
+            
+                /* Funktionen mit Übergabewerten */
+                    function saySomething(name, age) {
+                        alert('Herzlich Willkommen ' + name + ' ' + age);
+                    }
+                    let anwender = prompt('Gib deinen Namen ein');
+                    let alter = prompt('Gib dein Alter ein');
+                    saySomething(anwender, alter);
+
+                /* Funktion mit Rückgabewert */
+                    function example(x) {
+                        let ergebnis = 2 * x * x + 5 * x + 7;
+                        return ergebnis;
+                    }
+                    let eingabe = Number(prompt('Gib eine Zahl ein'));
+                    let wert = example(eingabe);
+                    alert(wert);
+        </script>
+    </body>
+</html>

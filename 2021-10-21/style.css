@@ -1,0 +1,47 @@
+.box {
+    min-height: 80vh;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box-1 {
+    background-color: aqua;
+}
+.box-2 {
+    background-color: burlywood;
+}
+.box-3 {
+    background-color: darksalmon;
+}
+input {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.btn {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #fff;
+}
+#ausgabe {
+    min-height: 20vh;
+    background-color: brown;
+}
+.dnone {
+    display: none;
+}
+.wrong {
+    padding: 25px;
+    margin: 15px;
+    background-color: crimson;
+    color: #fff;
+}
+.right {
+    padding: 25px;
+    margin: 15px;
+    background-color: chartreuse;
+}
