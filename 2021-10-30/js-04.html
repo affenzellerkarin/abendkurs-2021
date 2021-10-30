@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html id="test">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <button type="button" id="btn">Klick mich</button>
+        <input type="text" id="userInput">
+        <button type="button" onclick="start()">Drück mich</button>
+        <script>
+            /* Unterschied zw Mouse click, down und up */
+            function click() {
+                alert('Click Event');
+            }
+            function mdown() {
+                alert('Mousedown Event');
+            }
+            function mup() {
+                alert('Mouseup Event');
+            }
+            /* btn.onclick = click; */
+            /* btn.onmousedown = mdown; */
+            btn.onmouseup = mup;
+
+            function tastatureingabe(e) {
+                alert('Key ' + e.key + '\ncode: ' + e.code);
+                console.log(e);
+            }
+            userInput.onkeypress = tastatureingabe;
+
+            test.onkeypress = htmlEingabe;
+            function htmlEingabe(e) {
+                if(e.key = 'h') {
+                    window.open('js-01.html');
+                }
+            }
+
+            /* Eingaben bestätigen mit Confirm */
+                let zahl = prompt("Gib eine Zahl ein");
+                alert("eingegebene Zahl " + zahl);
+                let confirmInput = confirm("Bestätige die Eingabe");
+                if(confirmInput) {
+                    document.write('Bestätigt');
+                } else {
+                    document.write('nicht bestätigt');
+                } 
+           
+
+            document.write('höhe: ' + window.innerHeight 
+            + 'px breite: ' + window.innerWidth + 'px');
+
+            /* Window Fenster öffnen/Schließen */
+            window.open('js-03.html');
+            window.close();
+
+            /* Timeout setzen */
+            function message() {
+                alert("Button gedrückt");
+            }
+            function start() {
+                setTimeout(message, 2000);
+            }
+
+            /* Interval setzen */
+            let i = 1;
+            function intervalFunction() {
+                document.write(i + '<br>');
+                i++;
+            }
+            setInterval(intervalFunction, 1000);
+        </script>
+    </body>
+</html>

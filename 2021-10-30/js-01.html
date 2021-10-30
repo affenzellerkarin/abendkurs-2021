@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            /* Fehler zur Laufzeit abfangen */
+            let a = 1.37645294;
+            let x = prompt('Wie viele Stellen nach dem Komma sollen angezeigt werden');
+            try {
+                let b = a.toPrecision(x);
+                document.write("Wert mit gewünschter Anzahl: " + b);
+            } catch(err) {
+                window.alert(err);
+                alert(err.name);
+                alert(err.message);
+                console.log(err);
+            }
+            
+            /* catch {
+                alert('Gib einen Wert zwischen 1 und 8 ein');
+            } */
+        </script>
+    </body>
+</html>

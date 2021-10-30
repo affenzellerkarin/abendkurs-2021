@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body id="myBody">
+        <article id="myArticle">
+            <p>Erster Absatz</p>
+            <p id="myParagraph">
+                Hier steht Text 
+                <strong>Mit einem Fett</strong>
+                markierten Teil
+            </p>
+            <p>Zweiter Absatz</p>
+        </article>
+        <script>
+            function bodyTag() {
+                alert('BODY Tag');
+                this.style.backgroundColor = 'green';
+                event.stopPropagation();
+            }
+            myBody.onclick = bodyTag;
+
+            function articleTag() {
+                alert('article Tag');
+                this.style.backgroundColor = 'Yellow';
+                event.stopPropagation();
+            }
+            myArticle.onclick = articleTag;
+
+            function pTag() {
+                alert('p Tag');
+                this.style.backgroundColor = 'grey';
+                event.stopPropagation();
+            }
+            myParagraph.onclick = pTag;
+
+            function strongTag() {
+                alert('Strong Tag');
+                this.style.backgroundColor = 'blue';
+                event.stopPropagation();
+            }
+            let myStrong = document.getElementsByTagName('strong')[0];
+            myStrong.onclick = strongTag;
+            
+            function setBackgroundColor() {
+                let p = event.target.closest('p');
+                p.style.backgroundColor = 'green';
+            }
+            myBody.onclick = setBackgroundColor;
+
+            /* Window Fenster öffnen / schließen */
+            alert('stop');
+            window.close();
+        </script>
+    </body>
+</html>

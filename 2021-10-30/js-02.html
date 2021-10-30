@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <button onclick="alert('Du hast den Button gedrückt')" type="button">
+            Drück mich
+        </button>
+        <button type="button" onclick="myFunction()">Funktion aufrufen</button>
+        <!-- <p id="absatz01">Absatz 1</p>
+        <p id="absatz02">Absatz 2</p>
+        <p id="absatz03">Absatz 3</p> -->
+        <button type="button" id="buttonID">
+            Klick mich
+        </button>
+
+        <script>
+            function myFunction() {
+                let userInput = prompt('Gib eine Zahl ein');
+                userInput *= 2;
+                alert("Doppelter Wert " + userInput);
+            }
+
+            /* On Mouse Over Event */
+            /* Variante 1 */
+            absatz01.onmouseover = function() {
+                alert("Hier ist Absatz 1");
+            }
+            /* Variante 2 */
+            function message() {
+                alert("Absatz gefunden");
+            }
+            absatz02.onmouseover = message;
+            /* Variante 3 */
+            absatz03.addEventListener('mouseover', message);
+
+            /* Event Listener setzen und entfernen */
+            function output1() {
+                alert('Nachricht 1');
+                buttonID.addEventListener('click', output2);
+                buttonID.removeEventListener('click', output1);
+            }
+            function output2() {
+                alert('Nachricht 2');
+                buttonID.addEventListener('click', output1);
+                buttonID.removeEventListener('click', output2);
+            }
+            buttonID.addEventListener('click', output1);
+
+
+        </script>
+    </body>
+</html>
