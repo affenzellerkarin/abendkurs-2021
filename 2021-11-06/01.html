@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Überschrift 1</h1>
+        <h2>Überschrift 2</h2>
+        <p id="absatz">
+            Absatz mit <i>einem kursiven Bereich</i>
+            und einem <strong>fetten Bereich</strong> und einiges mehr
+        </p>
+        <script>
+            'use strict';
+            //alert(document.body.firstElementChild.nextElementSibling.innerHTML);
+            document.body.firstElementChild.nextElementSibling.innerHTML = "neue Überschrift";
+            document.getElementById('absatz').innerHTML = "Neuer Absatz <strong>test</strong>";
+        </script>
+    </body>
+</html>

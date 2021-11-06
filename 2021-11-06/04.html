@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form name="formular">
+            <input id="feld1" type="text" value="Feldinput 1">
+            <input id="feld2" type="text" value="Feldinput 2">
+            <hr>
+            <button type="button" id="btn1">
+                Feld 1
+            </button>
+            <button type="button" id="btn2">
+                Feld 2
+            </button>
+        </form>
+
+        <script>
+            function fokus1() {
+                feld1.value = "";
+                feld1.focus();
+            }
+            function fokus2() {
+                feld2.value = "";
+                feld2.focus();
+            }
+            btn1.onclick = fokus1;
+            btn2.onclick = fokus2;
+        </script>
+    </body>
+</html>

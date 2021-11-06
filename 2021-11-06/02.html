@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <input type="text" id="userInput">
+        <input type="text" id="secondInput">
+        <button type="button" onclick="readMe()">Ausgabe</button>
+        <script>
+            'use strict';
+            document.getElementById('userInput').value = "Guten Morgen";
+
+            function readMe() {
+                let content = document.getElementById('secondInput').value;
+                alert(content);
+            }
+        </script>
+    </body>
+</html>

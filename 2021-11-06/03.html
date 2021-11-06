@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p><a id="link"></a></p>
+
+        <form name="formular">
+            <input name="feld1" type="text" value="Formularfeld 1">
+            <input name="feld2" type="text" value="Formularfeld 2">
+            <input name="feld3" type="checkbox">
+            <button type="button" onclick="checkboxValue()">Check mich</button>
+            <hr>
+            <select id="auswahl">
+                <option value="option 1">Wert 1</option>
+                <option value="option 2">Wert 2</option>
+                <option value="option 3">Wert 3</option>
+            </select>
+            <button type="button" onclick="selectExample1()">BSP 1</button>
+            <button type="button" onclick="selectExample2()">BSP 2</button>
+            <button type="button" onclick="selectExample3()">BSP 3</button>
+        </form>
+        <script>
+            //let address = prompt('Gib eine Linkadresse ein');
+            document.getElementById('link').href = address;
+            document.getElementById('link').innerText = address;
+
+            function checkboxValue() {
+                document.forms.formular.elements.feld3.checked = true;
+            }
+
+            function selectExample1() {
+                auswahl.selectedIndex = 0;
+            }
+            function selectExample2() {
+                auswahl.options[1].selected = true;
+            }
+            function selectExample3() {
+                auswahl.value = 'option 3';
+            }
+        </script>
+    </body>
+</html>
