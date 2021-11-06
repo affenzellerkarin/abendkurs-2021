@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Hallo <span id="output"></span></h1>
+        <button type="button" onclick="setUsername()">Name eingeben</button>
+        <button type="button" onclick="deleteStorage()">Clear Storage</button>
+        <script>
+            function setUsername() {
+                let username = prompt('Gib deinen Username ein');
+                localStorage.setItem('username', username);
+                output.innerText = localStorage.getItem('username');
+            }
+            
+            function deleteStorage() {
+                localStorage.removeItem('username');
+                localStorage.clear(); // löscht den gesamten Storage
+            }
+        </script>
+    </body>
+</html>

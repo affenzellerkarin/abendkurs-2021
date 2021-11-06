@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .form-row {
+                display: flex;
+                margin: 15px auto;
+                justify-content: space-between;
+            }
+            .form-row > input {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="formular">
+            <div class="form-row">
+                <label for="inputname">Name</label>
+                <input type="text" id="inputname" name="name">
+            </div>
+            <div class="form-row">
+                <label for="inputmail">Mail</label>
+                <input type="text" id="inputmail" name="mail">
+            </div>
+            <div class="form-row">
+                <label for="inputalter">Alter</label>
+                <input type="text" id="inputalter" name="alter">
+            </div>
+            <button type="button" onclick="auswertung()">Check</button>
+        </form>
+
+        <script>
+            function auswertung() {
+                if(inputname.value == "") {
+                    alert('Gib einen Namen ein');
+                    inputname.focus();
+                }
+                if(!inputmail.value.includes('@')) {
+                    alert('Gib eine Mailadresse ein');
+                    inputmail.focus();
+                }
+                if(isNaN(inputalter.value) || inputalter.value < 10) {
+                    alert('not a number');
+                }
+                /* let zahl = true;
+                for(let i = 0; i < inputalter.value.length; i++) {
+                    if(inputalter.value.charAt(i) < '0' ||
+                    inputalter.value.charAt(i) > '9') {
+                        zahl = false;
+                    }
+                }
+                if(!zahl) {
+                    alert('Gib eine Zahl ein');
+                    inputalter.focus();
+                } */
+            }
+        </script>
+    </body>
+</html>
