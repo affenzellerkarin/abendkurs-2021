@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Mathe Quiz</title>
+  </head>
+  <body>
+    <article>
+      <h1>Das Mathe Quiz</h1>
+      <h2 class="user">Es spielt:</h2>
+    </article>
+    <article class="fade">
+      <p class="question">Frage</p>
+      <input id="result">
+      <button class="checkResult" type="button" onclick="checkResult()">Check Result</button>
+    </article>
+    <article class="fade dflex game">
+      <button id="btn-1" type="button">1</button>
+      <button id="btn-2" type="button">2</button>
+      <button id="btn-3" type="button">3</button>
+      <button id="btn-4" type="button">4</button>
+      <button id="btn-5" type="button">5</button>
+      <button id="btn-6" type="button">6</button>
+      <button id="btn-7" type="button">7</button>
+      <button id="btn-8" type="button">8</button>
+      <button id="btn-9" type="button">9</button>
+    </article>
+    <article class="dflex">
+      <button id="user" type="button" onclick="username()">Play</button>
+      <button id="start" type="button" onclick="start()">Restart</button>
+    </article>
+    <article id="output">
+      
+    </article>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
