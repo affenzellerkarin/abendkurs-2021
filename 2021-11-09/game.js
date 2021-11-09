@@ -129,7 +129,7 @@ function game(num) {
       a = Math.floor(Math.random() * 9 + 2); //die Basis
       b = Math.floor(Math.random() * 9 + 1); //das sum
       question = "Was ist der Logarithmus von " + Math.pow(a, b) + " zur Basis " + a + "?";
-      sum = Math.pow(a, b);
+      sum = b;
       break;
   }
   console.log(sum);
